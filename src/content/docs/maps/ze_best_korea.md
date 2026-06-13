@@ -1,6 +1,6 @@
 ---
 title: "ze_best_korea"
-description: "gay."
+description: "Medium difficulty, Multi-stage, High-coordination, Leader recommended"
 ---
 
 ## Overview
