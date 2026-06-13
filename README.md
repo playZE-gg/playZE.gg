@@ -1,10 +1,10 @@
 # playZE.gg
 
-Community documentation for CS2 Zombie Escape.
+Community documentation for Zombie Escape.
 
 ## What is this?
 
-playZE.gg is an open-source, community-maintained documentation site for CS2 Zombie Escape. It covers the fundamentals — movement, leading, holding, items — as well as per-map guides, configs, and reference material. Anyone can contribute; everything is licensed under GPL-3.0.
+playZE.gg is an open-source, community-maintained documentation site for Zombie Escape. It covers the fundamentals: Movement, leading, holding, and items. As well as per-map guides, configs, and reference material. Anyone can contribute; everything is licensed under GPL-3.0.
 
 ## Local development
 
