@@ -1,0 +1,24 @@
+# build output
+dist/
+dist-dryrun/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+
+# environment files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Astro
+.astro/
+
+# Playwright
+.playwright-mcp/

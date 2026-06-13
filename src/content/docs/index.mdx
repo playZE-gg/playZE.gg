@@ -1,0 +1,40 @@
+---
+title: playZE
+description: "The Zombie Escape player guide - learn how to move, lead, hold, and survive."
+template: splash
+hero:
+  tagline: The Zombie Escape player guide. Learn movement, leading, holding, and how to survive.
+  image:
+    file: ../../assets/logo.svg
+  actions:
+    - text: Start Here
+      link: /start/getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: Browse Maps
+      link: /maps/
+      icon: open-book
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## What is Zombie Escape?
+
+Zombie Escape (ZE) is a game mode where humans must survive waves of zombies by moving through a map, holding positions, and using special items, all while a team of infected players tries to catch them. It's chaotic, coordinated, and unlike anything in the given base game.
+
+## What's in this guide?
+
+<CardGrid>
+  <Card title="<a href='/skills/playing-as-human/'>Core Skills</a>" icon="pencil">
+    Movement, leading, holding, items. The fundamentals that make the difference between surviving and getting infected in the first 10 seconds.
+  </Card>
+  <Card title="<a href='/maps/'>Map Guides</a>" icon="open-book">
+    Stage-by-stage breakdowns, recommended holds, common fail points, and item usage for popular maps.
+  </Card>
+  <Card title="<a href='/reference/glossary/'>Reference</a>" icon="information">
+    Glossary of ZE terms, useful console commands, and recommended configs.
+  </Card>
+  <Card title="<a href='/contribute/how-to-contribute/'>Contribute</a>" icon="add-document">
+    Open source! All content is under a GPL license. Add a map guide, fix outdated info, or translate a page.
+  </Card>
+</CardGrid>

@@ -1,0 +1,40 @@
+---
+import { logos } from 'virtual:starlight/user-images';
+import config from 'virtual:starlight/user-config';
+const { siteTitleHref } = Astro.locals.starlightRoute;
+---
+<a href={siteTitleHref} class="site-title">
+  {config.logo && logos.dark && (
+    <img
+      src={logos.dark.src}
+      alt={config.logo.alt}
+      class="site-logo"
+      width={logos.dark.width}
+      height={logos.dark.height}
+    />
+  )}
+  <span class="title-text">play<span class="ze-accent">ZE</span></span>
+</a>
+
+<style>
+  .site-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--sl-color-white);
+    font-family: var(--sl-font-mono);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: -0.02em;
+    white-space: nowrap;
+  }
+  .site-logo {
+    height: 1.5rem;
+    width: auto;
+    flex-shrink: 0;
+  }
+  .ze-accent {
+    color: var(--sl-color-accent);
+  }
+</style>

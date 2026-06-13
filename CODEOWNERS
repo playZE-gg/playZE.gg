@@ -1,0 +1,20 @@
+# CODEOWNERS
+# GitHub uses this file to auto-assign reviewers based on changed file paths.
+# Rules are evaluated top-to-bottom; the last matching rule wins.
+# Teams must exist in the GitHub org before this file takes effect.
+
+# Catch-all: everything requires a maintainer review by default
+*                              @playZE-gg/maintainers
+
+# Content: docs and map guides can be reviewed by content-reviewers
+src/content/docs/              @playZE-gg/content-reviewers
+src/content/docs/maps/         @playZE-gg/content-reviewers
+
+# Override: site config always requires a maintainer regardless of catch-all
+astro.config.mjs               @playZE-gg/maintainers
+src/styles/                    @playZE-gg/maintainers
+src/assets/                    @playZE-gg/maintainers
+
+# Override: deployment and CI config always requires a maintainer
+wrangler.jsonc                 @playZE-gg/maintainers
+.github/                       @playZE-gg/maintainers

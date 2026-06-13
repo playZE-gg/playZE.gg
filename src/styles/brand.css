@@ -1,0 +1,229 @@
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/600.css';
+
+:root {
+  --sl-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* Dark theme */
+:root[data-theme='dark'] {
+  --sl-color-accent-low: #3a1e08;
+  --sl-color-accent: #ff8c42;
+  --sl-color-accent-high: #ffd2ad;
+  --sl-color-text-accent: #ff9d5c;
+}
+
+/* Light theme — amber deepened for WCAG contrast */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #ffe6d2;
+  --sl-color-accent: #c2571a;
+  --sl-color-accent-high: #7a3a10;
+  --sl-color-text-accent: #b8501a;
+}
+
+.site-title {
+  font-family: var(--sl-font-mono);
+  letter-spacing: -0.02em;
+}
+
+/* ─── Dark theme: full palette ──────────────────────────────── */
+:root[data-theme='dark'] {
+  --sl-color-bg: #0f1117;
+  --sl-color-bg-nav: #161b22;
+  --sl-color-bg-sidebar: #161b22;
+  --sl-color-hairline: rgba(255, 255, 255, 0.08);
+  --sl-color-hairline-light: rgba(255, 255, 255, 0.05);
+  --sl-color-white: #e6edf3;
+  --sl-color-gray-1: #e6edf3;
+  --sl-color-gray-2: #c9d1d9;
+  --sl-color-gray-3: #8b949e;
+  --sl-color-gray-4: #484f58;
+  --sl-color-gray-5: #21262d;
+  --sl-color-gray-6: #161b22;
+  --sl-color-black: #0f1117;
+}
+
+/* ─── Light theme: surfaces ─────────────────────────────────── */
+:root[data-theme='light'] {
+  --sl-color-bg: #f6f8fa;
+  --sl-color-bg-nav: #ffffff;
+  --sl-color-bg-sidebar: #f0f2f4;
+  --sl-color-hairline: rgba(0, 0, 0, 0.1);
+  --sl-color-hairline-light: rgba(0, 0, 0, 0.06);
+}
+
+header.header {
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+
+#starlight__sidebar {
+  border-right: 1px solid var(--sl-color-hairline);
+}
+
+/* ─── Content area ──────────────────────────────────────────── */
+
+.sl-markdown-content h2 {
+  border-bottom: 1px solid var(--sl-color-hairline);
+  padding-bottom: 0.4em;
+}
+
+.sl-markdown-content table {
+  border: 1px solid var(--sl-color-hairline);
+  border-collapse: collapse;
+  width: 100%;
+}
+.sl-markdown-content th {
+  background: var(--sl-color-bg-sidebar);
+  font-family: var(--sl-font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--sl-color-hairline);
+  text-align: left;
+}
+.sl-markdown-content td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid var(--sl-color-hairline-light);
+}
+.sl-markdown-content tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.02);
+}
+:root[data-theme='light'] .sl-markdown-content tr:nth-child(even) td {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+/* Cards (CardGrid) */
+.card {
+  position: relative;
+  border: 1px solid var(--sl-color-hairline) !important;
+  background: var(--sl-color-bg-sidebar) !important;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+.card:hover {
+  border-color: var(--sl-color-accent) !important;
+  box-shadow: 0 0 0 1px var(--sl-color-accent);
+}
+.title a {
+  text-decoration: none;
+  color: inherit;
+}
+.title a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* ─── Per-card color accents ─────────────────────────────── */
+
+/* Card 1 — Core Skills — amber */
+.card:nth-child(1) {
+  background: linear-gradient(225deg, rgba(232, 160, 32, 0.6) 16px, var(--sl-color-bg-sidebar) 16px) !important;
+  border-top-color: rgba(232, 160, 32, 0.5) !important;
+  border-right-color: rgba(232, 160, 32, 0.5) !important;
+}
+.card:nth-child(1) .icon {
+  background-color: rgba(232, 160, 32, 0.12);
+  border-color: rgba(232, 160, 32, 0.4);
+  color: #e8a020;
+}
+
+/* Card 2 — Map Guides — blue */
+.card:nth-child(2) {
+  background: linear-gradient(225deg, rgba(74, 158, 255, 0.6) 16px, var(--sl-color-bg-sidebar) 16px) !important;
+  border-top-color: rgba(74, 158, 255, 0.5) !important;
+  border-right-color: rgba(74, 158, 255, 0.5) !important;
+}
+.card:nth-child(2) .icon {
+  background-color: rgba(74, 158, 255, 0.12);
+  border-color: rgba(74, 158, 255, 0.4);
+  color: #4a9eff;
+}
+
+/* Card 3 — Reference — violet */
+.card:nth-child(3) {
+  background: linear-gradient(225deg, rgba(167, 139, 250, 0.6) 16px, var(--sl-color-bg-sidebar) 16px) !important;
+  border-top-color: rgba(167, 139, 250, 0.5) !important;
+  border-right-color: rgba(167, 139, 250, 0.5) !important;
+}
+.card:nth-child(3) .icon {
+  background-color: rgba(167, 139, 250, 0.12);
+  border-color: rgba(167, 139, 250, 0.4);
+  color: #a78bfa;
+}
+
+/* Card 4 — Contribute — green */
+.card:nth-child(4) {
+  background: linear-gradient(225deg, rgba(74, 222, 128, 0.6) 16px, var(--sl-color-bg-sidebar) 16px) !important;
+  border-top-color: rgba(74, 222, 128, 0.5) !important;
+  border-right-color: rgba(74, 222, 128, 0.5) !important;
+}
+.card:nth-child(4) .icon {
+  background-color: rgba(74, 222, 128, 0.12);
+  border-color: rgba(74, 222, 128, 0.4);
+  color: #4ade80;
+}
+
+/* ─── Per-card hover glows ──────────────────────────────── */
+.card:nth-child(1):hover {
+  border-color: rgba(232, 160, 32, 0.8) !important;
+  box-shadow: 0 0 0 1px rgba(232, 160, 32, 0.5);
+}
+.card:nth-child(2):hover {
+  border-color: rgba(74, 158, 255, 0.8) !important;
+  box-shadow: 0 0 0 1px rgba(74, 158, 255, 0.5);
+}
+.card:nth-child(3):hover {
+  border-color: rgba(167, 139, 250, 0.8) !important;
+  box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.5);
+}
+.card:nth-child(4):hover {
+  border-color: rgba(74, 222, 128, 0.8) !important;
+  box-shadow: 0 0 0 1px rgba(74, 222, 128, 0.5);
+}
+
+/* ─── Light theme: reduce badge opacity ─────────────────── */
+:root[data-theme='light'] .card:nth-child(1) .icon { background-color: rgba(232, 160, 32, 0.08); }
+:root[data-theme='light'] .card:nth-child(2) .icon { background-color: rgba(74, 158, 255, 0.08); }
+:root[data-theme='light'] .card:nth-child(3) .icon { background-color: rgba(167, 139, 250, 0.08); }
+:root[data-theme='light'] .card:nth-child(4) .icon { background-color: rgba(74, 222, 128, 0.08); }
+
+/* Table of contents */
+starlight-toc a {
+  font-size: 0.8rem;
+  color: var(--sl-color-gray-3);
+  transition: color 150ms ease;
+}
+starlight-toc a[aria-current='true'],
+starlight-toc a:hover {
+  color: var(--sl-color-accent);
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────── */
+
+/* Section group labels (e.g. "Start Here", "Core Skills") */
+.group-label span {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sl-color-gray-3);
+}
+
+#starlight__sidebar a {
+  padding-block: 0.3rem;
+}
+
+#starlight__sidebar a[aria-current='page'] {
+  border-left: 2px solid var(--sl-color-accent);
+  padding-left: calc(var(--sl-sidebar-item-padding-inline) - 2px);
+  background: rgba(255, 140, 66, 0.08);
+  color: var(--sl-color-accent);
+  font-weight: 600;
+}
+
+#starlight__sidebar a:not([aria-current='page']):hover {
+  background: rgba(255, 140, 66, 0.05);
+  color: var(--sl-color-text-accent);
+}

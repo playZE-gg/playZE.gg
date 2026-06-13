@@ -1,0 +1,25 @@
+{
+  "repository": {
+    "name": "playZE-gg/playZE.gg",
+    "branch": "main",
+    "hosting": "github"
+  },
+  "defaultLocale": {
+    "label": "English",
+    "lang": "en"
+  },
+  "locales": [
+    { "label": "English", "lang": "en" },
+    { "label": "Español", "lang": "es" },
+    { "label": "简体中文", "lang": "zh-CN" }
+  ],
+  "files": [
+    {
+      "location": "src/content/docs/**/*.{md,mdx}",
+      "ignore": ["src/content/docs/**/_*"],
+      "pattern": "src/content/docs/@path",
+      "type": "universal"
+    }
+  ],
+  "localizableProperty": "localizable"
+}
