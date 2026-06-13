@@ -8,7 +8,7 @@ playZE.gg is an open-source, community-maintained documentation site for CS2 Zom
 
 ## Local development
 
-Requires Node.js 18+.
+Requires Node.js 22+.
 
 ```bash
 git clone https://github.com/playZE-gg/playZE.gg.git
