@@ -16,9 +16,9 @@
 /* Light theme — amber deepened for WCAG contrast */
 :root[data-theme='light'] {
   --sl-color-accent-low: #ffe6d2;
-  --sl-color-accent: #c2571a;
+  --sl-color-accent: #ff8c42;
   --sl-color-accent-high: #7a3a10;
-  --sl-color-text-accent: #b8501a;
+  --sl-color-text-accent: #ff8c42;
 }
 
 .site-title {
