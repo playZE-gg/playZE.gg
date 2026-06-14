@@ -19,12 +19,18 @@ Explain why it got this rating. What makes it accessible or challenging? What pr
 
 ## Stages
 
+<!-- Use ### for each stage (it gets an auto-numbered badge). Use #### or deeper for sections within a stage, never ### for a sub-section. -->
+
 ### Stage 1 — [Stage name / location]
 
 Describe what happens in this stage: the path humans take, where the hold is, what triggers the stage end. Include:
 - Where to hold
 - How long the hold typically lasts
 - What triggers the push / stage completion
+
+#### [Section within the stage, if needed]
+
+...
 
 ### Stage 2 — [Stage name / location]
 

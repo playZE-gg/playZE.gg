@@ -97,7 +97,7 @@ Once the trigger is complete humans must back up all the way, again making sure 
 
 The door will close almost immediately after fully opening so ensure that you are inside.  Once inside continue to defend and use all utility to keep zombies out.
 
-**STAGE COMPLETE**
+<span class="rainbow"> **STAGE COMPLETE** </span>
 
 ### Stage 2 — [Stage name / location]
 

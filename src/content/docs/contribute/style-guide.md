@@ -20,6 +20,12 @@ Use `##` (H2) for major sections and `###` (H3) for subsections. Avoid skipping 
 
 Heading text should be descriptive, not clever. "Stage 2 — Generator Room" is better than "The Gauntlet."
 
+### Map stage headings
+
+In map guides, `###` (H3) is reserved for **stages** — each `###` is auto-numbered with a stage badge. Sections *within* a stage must use `####` (H4) or deeper, never `###`. This keeps the automatic stage numbering correct.
+
+For long guides converted to MDX, use the `<Stage n={1} title="..." />` component instead of a `###` heading. It renders the same badge with explicit numbering.
+
 ## Map guide sections
 
 Follow the template exactly — all eight sections, in order. Don't add extra top-level sections or remove required ones. If a section genuinely doesn't apply (e.g. no items on this map), write a brief sentence saying so rather than deleting the section.
