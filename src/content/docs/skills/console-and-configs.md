@@ -16,10 +16,10 @@ Open with `~` (tilde) by default.
 
 ## Useful binds
 
-### Mute voice chat selectively
+#### Mute voice chat selectively
 Type `voice_enable 0` to mute all voice. Use the scoreboard to mute individual players (tab → right-click name).
 
-### Scoreboard
+#### Scoreboard
 Keep the scoreboard bound somewhere accessible, you'll use it to check who has items, who is zombie, and to mute players.
 
 ## Volume settings

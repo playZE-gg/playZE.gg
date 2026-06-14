@@ -19,7 +19,7 @@ Useful console commands and binds for CS2 ZE. Enable the developer console in CS
 
 ## Useful Binds
 
-### Scroll wheel jump (bhop aid)
+#### Scroll wheel jump (bhop aid)
 
 ```
 bind "mwheeldown" "+jump"
@@ -27,14 +27,6 @@ bind "mwheelup" "+jump"
 ```
 
 Scroll-wheel jumping makes timing bhops easier. Both directions jump for maximum flexibility.
-
-### Walk toggle
-
-```
-bind "alt" "+speed"
-```
-
-Hold Alt to walk silently. Useful on maps where footsteps matter.
 
 ## Common Server Commands
 

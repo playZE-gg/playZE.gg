@@ -65,13 +65,13 @@ For external links, use the full URL.
 
 ## Frontmatter fields
 
-### All pages
+#### All pages
 | Field | Required | Notes |
 |---|---|---|
 | `title` | Yes | Sentence case. Keep under 60 characters. |
 | `description` | Yes | One sentence. Used in search results and social previews. Under 160 characters. |
 
-### Map pages (additional)
+#### Map pages (additional)
 | Field | Required | Notes |
 |---|---|---|
 | `difficulty` | Yes | One of: `Easy`, `Medium`, `Hard`, `Insane` |

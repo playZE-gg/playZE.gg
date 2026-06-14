@@ -17,10 +17,10 @@ Leading is the highest-impact role in ZE. A good leader turns a confused group i
 
 ## The basics
 
-### Be clear and early
+#### Be clear and early
 Call before you need people to act, not at the same moment. "Hold here" needs to be said as the team is arriving, not when zombies are already in contact.
 
-### Use short callouts
+#### Use short callouts
 - "Hold" / "Defend": stop and defend
 - "Push" / "Move": advance now
 - "Teleport" / specific trigger name:  activate a map event
@@ -28,7 +28,7 @@ Call before you need people to act, not at the same moment. "Hold here" needs to
 
 Long explanations during a hold are noise. Be brief.
 
-### Don't over-call
+#### Don't over-call
 Constant callouts for obvious actions desensitize the team. Save your voice for critical moments.
 
 ## Item management
