@@ -8,7 +8,7 @@ import { dirname, join } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  site: 'https://playze.gg',
+  site: 'https://www.playze.gg',
   integrations: [
     starlight({
       plugins: [lunariaStarlight({ configPath: join(__dirname, 'lunaria.config.json') })],
@@ -18,11 +18,11 @@ export default defineConfig({
       customCss: ['./src/styles/brand.css'],
       head: [
         // Open Graph / social share image (Starlight sets og:title/description + twitter:card itself)
-        { tag: 'meta', attrs: { property: 'og:image', content: 'https://playze.gg/og.png' } },
+        { tag: 'meta', attrs: { property: 'og:image', content: 'https://www.playze.gg/og.png' } },
         { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
         { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
         { tag: 'meta', attrs: { property: 'og:image:alt', content: 'playZE — The Zombie Escape Player Guide' } },
-        { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://playze.gg/og.png' } },
+        { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://www.playze.gg/og.png' } },
       ],
       editLink: {
         baseUrl: 'https://github.com/playZE-gg/playZE.gg/edit/main/',
