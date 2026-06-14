@@ -49,7 +49,7 @@ Once there is about 15 seconds left to the door opening defenders should run bac
 
 ***Image of NPC***
 
-### Concrete/Indoor section
+#### Concrete/Indoor section
 
 Fall back all the way to the next defense by hugging the right, walking up the ramp, Turn left and then surf to the end. If you are comfortable doing so you may instead hug the left side through the door and complete the jumps to get to the end as well. <br/> <br/>
 Zombies will be taking both sections. Be aware that there is a Platform in the middle of the Two paths That humans will need to use after defending. Usually zombies will not make it to the platform fast enough to make use of it, but ensure that zombies are shot off if any make it on.
