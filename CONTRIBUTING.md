@@ -20,7 +20,7 @@ npm install
 npm run dev
 ```
 
-Site runs at `http://localhost:4321`. Requires Node.js 18+.
+Site runs at `http://localhost:4321`. Requires Node.js 22+.
 
 ## Adding a map guide
 
