@@ -77,24 +77,20 @@ header.header {
 }
 
 /* ─── Stage badges ──────────────────────────────────────────── */
-/* Counter resets at each H2 and numbers plain-Markdown stage (###)
-   headings. Convention: ### = stage, #### + = sections within a stage.
-   `.stage-title` (the <Stage> component) is excluded so component pages
-   are not double-numbered. */
+/* Counter resets at each H2 and numbers plain-Markdown stage (###) headings.
+   Convention: ### = stage, #### + = sections within a stage. */
 .sl-markdown-content {
   counter-reset: stage;
 }
 .sl-markdown-content h2 {
   counter-reset: stage;
 }
-.sl-markdown-content h3:not(.stage-title) {
+.sl-markdown-content h3 {
   counter-increment: stage;
 }
 
-/* Shared badge visual — used by both the counter ::before and the
-   <Stage> component's .stage-badge */
-.sl-markdown-content h3:not(.stage-title)::before,
-.sl-markdown-content .stage-badge {
+/* Shared badge visual — used by the counter ::before */
+.sl-markdown-content h3::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -113,8 +109,75 @@ header.header {
 }
 
 /* Counter supplies the number for plain-Markdown stages */
-.sl-markdown-content h3:not(.stage-title)::before {
+.sl-markdown-content h3::before {
   content: counter(stage, decimal-leading-zero);
+}
+
+/* ─── Collapsible stages ─────────────────────────────────── */
+.sl-markdown-content details.stage,
+.sl-markdown-content details.stage-section {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 0.5rem;
+  margin: 0.75rem 0;
+  overflow: hidden;
+}
+.sl-markdown-content details.stage {
+  background: var(--sl-color-bg-sidebar);
+}
+.sl-markdown-content details.stage-section {
+  margin-left: 1rem;
+  background: transparent;
+}
+/* Suppress Starlight's ::before disclosure arrow on stage summaries (FIX 1) */
+.sl-markdown-content details.stage > summary::before,
+.sl-markdown-content details.stage-section > summary::before {
+  content: none;
+}
+.sl-markdown-content :is(details.stage, details.stage-section) > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.85rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.sl-markdown-content :is(details.stage, details.stage-section) > summary::-webkit-details-marker {
+  display: none;
+}
+.sl-markdown-content :is(details.stage, details.stage-section) > summary :is(h3, h4, h5, h6) {
+  margin: 0;
+  border: 0;
+  padding-block: 0;
+  padding-inline-start: 0;
+  /* Keep Starlight's end-of-line padding so the hover anchor-link icon has
+     room to sit after the text instead of overlapping it. */
+}
+/* Custom chevron, far right of the summary bar */
+.sl-markdown-content :is(details.stage, details.stage-section) > summary::after {
+  content: '';
+  margin-left: auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid var(--sl-color-gray-3);
+  border-bottom: 2px solid var(--sl-color-gray-3);
+  transform: rotate(45deg);
+  transition: transform 150ms ease;
+}
+.sl-markdown-content :is(details.stage, details.stage-section)[open] > summary::after {
+  transform: rotate(225deg);
+}
+.sl-markdown-content :is(details.stage, details.stage-section)[open] > summary {
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+/* Body content padding (direct children other than the summary) */
+.sl-markdown-content :is(details.stage, details.stage-section) > :not(summary) {
+  margin-left: 0.85rem;
+  margin-right: 0.85rem;
+}
+/* Avoid doubled outer margins on the very first/last body element */
+.sl-markdown-content :is(details.stage, details.stage-section) > summary + * {
+  margin-top: 0.75rem;
 }
 
 .sl-markdown-content table {

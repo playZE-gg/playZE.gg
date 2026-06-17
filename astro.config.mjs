@@ -4,11 +4,18 @@ import sitemap from '@astrojs/sitemap';
 import lunariaStarlight from '@lunariajs/starlight';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import rehypeCollapsibleStages from './src/plugins/rehype-collapsible-stages.mjs';
+import { unified } from '@astrojs/markdown-remark';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   site: 'https://www.playze.gg',
+  markdown: {
+    processor: unified({
+      rehypePlugins: [rehypeCollapsibleStages],
+    }),
+  },
   integrations: [
     starlight({
       plugins: [lunariaStarlight({ configPath: join(__dirname, 'lunaria.config.json') })],
@@ -23,6 +30,18 @@ export default defineConfig({
         { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
         { tag: 'meta', attrs: { property: 'og:image:alt', content: 'playZE — The Zombie Escape Player Guide' } },
         { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://www.playze.gg/og.png' } },
+        {
+          tag: 'script',
+          content: [
+            '(function(){',
+            'function openAncestors(el){for(var p=el&&el.parentElement;p;p=p.parentElement){if(p.tagName===\"DETAILS\")p.open=true;}}',
+            'function openFromHash(){if(!location.hash)return;var el=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(el){openAncestors(el);el.scrollIntoView();}}',
+            'window.addEventListener(\"hashchange\",openFromHash);',
+            'document.addEventListener(\"DOMContentLoaded\",openFromHash);',
+            'document.addEventListener(\"astro:page-load\",openFromHash);',
+            '})();',
+          ].join(''),
+        },
       ],
       editLink: {
         baseUrl: 'https://github.com/playZE-gg/playZE.gg/edit/main/',

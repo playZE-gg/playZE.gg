@@ -24,7 +24,7 @@ Heading text should be descriptive, not clever. "Stage 2 — Generator Room" is 
 
 In map guides, `###` (H3) is reserved for **stages** — each `###` is auto-numbered with a stage badge. Sections *within* a stage must use `####` (H4) or deeper, never `###`. This keeps the automatic stage numbering correct.
 
-For long guides converted to MDX, use the `<Stage n={1} title="..." />` component instead of a `###` heading. It renders the same badge with explicit numbering.
+Map guides must be authored as plain-Markdown `.md` files. The site automatically numbers and collapses `### Stage N — Name` headings at build time. This behavior does not apply to `.mdx` files.
 
 ## Map guide sections
 
