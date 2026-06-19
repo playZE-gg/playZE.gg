@@ -84,18 +84,22 @@ Once the door opens, knife-out and run back. You will drop out of the ship into 
 ***Image of the water area*** <br/>
 ***Image of the platform to climb out of the water, the elevator, and where humans defend at the bottom of the ramps***
 
-##### Final Door Trigger
-
-To open the final door one person must go back all the way To the top of the ramps, dodge more landmines, and then complete a small puzzle to open the final door. On the door will be a handful of words moving around in random directions, sometimes overlapping each other. These words must be shot in order to create the song that goes `Ooh Eeh Ooh Ah Aah Ting Tang Walla Walla Bing Bang`. [The song being referenced by this can be found here](https://www.youtube.com/watch?v=TYgOlqinH7A). <br/> <br/> 
-One specific call out I will make on this is that the `Walla` Button needs to be shot twice in a row to fulfill the puzzle. I see many people trying to trigger this for the first time, and they only shoot `Walla` 1 time.
-
-***Image of the landmines and the path*** <br/>
-***Image of the final door*** <br/>
-***Example images of at least a couple of the words***
-
-Once the trigger is complete humans must back up all the way, again making sure to dodge more landmines on the ground, And enter the final door of the section. If the humans were defending at the bottom of the ramp the entire time the door was being triggered, You do not need to over defend. If zombies pushed the humans to the top of the ramps or beyond, you must defend for a bit longer so that zombies do not get inside the final door. <br/> <br/>
+Once the trigger is complete, humans must back up all the way, again making sure to dodge more landmines on the ground, and enter the final door of the section. If the humans were defending at the bottom of the ramp the entire time the door was being triggered, you do not need to over defend. If zombies pushed the humans to the top of the ramps or beyond, you must defend for a bit longer so that zombies do not get inside the final door.
 
 The door will close almost immediately after fully opening so ensure that you are inside.  Once inside continue to defend and use all utility to keep zombies out.
+
+***Image of the landmines and the path*** <br/>
+***Image of the final door***
+
+##### Final Door Trigger
+
+To open the final door one person must go back all the way To the top of the ramps, dodge more landmines, and then complete a small puzzle to open the final door. On the door will be a handful of words moving around in random directions, sometimes overlapping each other. These words must be shot in order to create the song that goes `Ooh Eeh Ooh Ah Aah Ting Tang Walla Walla Bing Bang`.
+<a href="https://www.youtube.com/watch?v=TYgOlqinH7A" target="_blank" rel="noopener noreferrer">The song being referenced by this can be found here</a>. <br/> 
+
+One specific call out I will make on this is that the `Walla` Button needs to be shot twice in a row to fulfill the puzzle. I see many people trying to trigger this for the first time, and they only shoot `Walla` 1 time.
+
+***Image of the final door*** <br/>
+***Example images of at least a couple of the words***
 
 #### <span class="rainbow"> **STAGE COMPLETE** </span>
 
