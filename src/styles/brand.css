@@ -119,7 +119,10 @@ header.header {
   border: 1px solid var(--sl-color-hairline);
   border-radius: 0.5rem;
   margin: 0.75rem 0;
-  overflow: hidden;
+  /* `clip` keeps the rounded-corner clipping of `hidden` but, unlike `hidden`,
+     does NOT establish a scroll container — so the sticky summary below can
+     stick to the page viewport instead of being trapped inside this box. */
+  overflow: clip;
 }
 .sl-markdown-content details.stage {
   background: var(--sl-color-bg-sidebar);
@@ -144,6 +147,36 @@ header.header {
 }
 .sl-markdown-content :is(details.stage, details.stage-section) > summary::-webkit-details-marker {
   display: none;
+}
+/* ─── Sticky summary: the header you click to collapse follows you down the
+   page, so it's always one click away wherever you are inside the section.
+   --stage-stick-h approximates a summary's height and drives the stacked
+   offsets for nested headers (tune here if heading sizes change). */
+.sl-markdown-content {
+  --stage-stick-h: 2.75rem;
+}
+.sl-markdown-content :is(details.stage, details.stage-section) > summary {
+  position: sticky;
+  /* Opaque background so body text scrolling underneath doesn't bleed through.
+     Both stages and (always-nested) sub-sections sit on the sidebar bg. */
+  background: var(--sl-color-bg-sidebar);
+}
+/* Top-level stage header sticks just below Starlight's fixed top nav bar
+   (--sl-nav-height) so it doesn't slide up behind it. Layers above everything. */
+.sl-markdown-content details.stage > summary {
+  top: var(--sl-nav-height);
+  z-index: 3;
+}
+/* A nested sub-section header sticks just below its parent stage header,
+   stacking like a little timeline rather than overlapping it. */
+.sl-markdown-content details.stage-section > summary {
+  top: calc(var(--sl-nav-height) + var(--stage-stick-h));
+  z-index: 2;
+}
+/* A third level (#####) stacks below the two above it. */
+.sl-markdown-content details.stage-section details.stage-section > summary {
+  top: calc(var(--sl-nav-height) + var(--stage-stick-h) * 2);
+  z-index: 1;
 }
 .sl-markdown-content :is(details.stage, details.stage-section) > summary :is(h3, h4, h5, h6) {
   margin: 0;

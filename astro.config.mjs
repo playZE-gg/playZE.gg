@@ -32,6 +32,7 @@ export default defineConfig({
         { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://www.playze.gg/og.png' } },
         {
           tag: 'script',
+          // I hate that this is techincally the simplest way to add custom head content, so just have your favorite AI friend write this shit for you
           content: [
             '(function(){',
             'function openAncestors(el){for(var p=el&&el.parentElement;p;p=p.parentElement){if(p.tagName===\"DETAILS\")p.open=true;}}',
@@ -39,6 +40,17 @@ export default defineConfig({
             'window.addEventListener(\"hashchange\",openFromHash);',
             'document.addEventListener(\"DOMContentLoaded\",openFromHash);',
             'document.addEventListener(\"astro:page-load\",openFromHash);',
+            // On collapse, if the section\'s sticky header has scrolled up past
+            // its resting line, glide back so you land on the header instead of
+            // in whitespace. Capture phase: the `toggle` event does not bubble.
+            'document.addEventListener(\"toggle\",function(e){',
+            'var d=e.target;if(!d||d.tagName!==\"DETAILS\"||d.open)return;',
+            'if(!(d.classList.contains(\"stage\")||d.classList.contains(\"stage-section\")))return;',
+            'var s=d.querySelector(\":scope>summary\");if(!s)return;',
+            'var stick=parseFloat(getComputedStyle(s).top)||0,top=d.getBoundingClientRect().top;',
+            'if(top<stick){var r=matchMedia(\"(prefers-reduced-motion:reduce)\").matches;',
+            'window.scrollTo({top:window.scrollY+top-stick,behavior:r?\"auto\":\"smooth\"});}',
+            '},true);',
             '})();',
           ].join(''),
         },
