@@ -18,7 +18,7 @@
     "@lunariajs/starlight": "^0.1.1",
     "astro": "^6.4.6",
     "astro-contributors": "^0.8.0",
-    "sharp": "^0.35.1"
+    "sharp": "^0.35.2"
   },
   "devDependencies": {
     "vitest": "^3.0.0",
