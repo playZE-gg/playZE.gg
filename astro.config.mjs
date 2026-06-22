@@ -30,9 +30,19 @@ export default defineConfig({
         { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
         { tag: 'meta', attrs: { property: 'og:image:alt', content: 'playZE — The Zombie Escape Player Guide' } },
         { tag: 'meta', attrs: { name: 'twitter:image', content: 'https://www.playze.gg/og.png' } },
+        
+        
+        // I hate that this is techincally the simplest way to add custom head content, so just have your favorite AI friend write this shit for you
+        
+        // Microsoft Clarity (session replay / heatmaps). Async-injected, so it
+        // never blocks parsing or first paint — content renders first.
         {
           tag: 'script',
-          // I hate that this is techincally the simplest way to add custom head content, so just have your favorite AI friend write this shit for you
+          content:
+            '(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xas4bgjeb5");',
+        },
+        {
+          tag: 'script',
           content: [
             '(function(){',
             'function openAncestors(el){for(var p=el&&el.parentElement;p;p=p.parentElement){if(p.tagName===\"DETAILS\")p.open=true;}}',
