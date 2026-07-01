@@ -5,6 +5,7 @@ import lunariaStarlight from '@lunariajs/starlight';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import rehypeCollapsibleStages from './src/plugins/rehype-collapsible-stages.mjs';
+import rehypeStepLayout from './src/plugins/rehype-step-layout.mjs';
 import { unified } from '@astrojs/markdown-remark';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -13,7 +14,7 @@ export default defineConfig({
   site: 'https://www.playze.gg',
   markdown: {
     processor: unified({
-      rehypePlugins: [rehypeCollapsibleStages],
+      rehypePlugins: [rehypeStepLayout, rehypeCollapsibleStages],
     }),
   },
   integrations: [
@@ -115,6 +116,7 @@ export default defineConfig({
         themes: ['github-dark', 'github-light'],
       },
       components: {
+        Head: './src/components/overrides/Head.astro',
         SiteTitle: './src/components/overrides/SiteTitle.astro',
         Hero: './src/components/overrides/Hero.astro',
       },

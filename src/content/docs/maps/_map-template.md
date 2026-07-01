@@ -30,7 +30,12 @@ Describe what happens in this stage: the path humans take, where the hold is, wh
 
 #### [Section within the stage, if needed]
 
-...
+Write each instruction as a short paragraph, then put its screenshot on the next
+line so they render side-by-side:
+
+Defend here until the door opens. Watch the left flank.
+
+![What this position looks like](./your_map_name/example-screenshot.webp)
 
 ### Stage 2 — [Stage name / location]
 

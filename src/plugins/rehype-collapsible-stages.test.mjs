@@ -112,10 +112,11 @@ describe('rehypeCollapsibleStages plugin', () => {
       heading(3, 'Not a stage'), p('b'),
     ]), MAPS);
 
-    // Stages h2 stays; its h3 is now inside details.stage
+    // Stages h2 stays; stage index nav follows; then h3 is inside details.stage
     expect(tree.children[0].tagName).toBe('h2');
-    expect(tree.children[1].tagName).toBe('details');
-    expect((tree.children[1].properties.className || []).includes('stage')).toBe(true);
+    expect(tree.children[1].tagName).toBe('nav'); // stage index
+    expect(tree.children[2].tagName).toBe('details');
+    expect((tree.children[2].properties.className || []).includes('stage')).toBe(true);
     // The second h2 and its h3 are NOT wrapped
     const failIdx = tree.children.findIndex(
       (n) => n.tagName === 'h2' && n.properties.id === 'common-fail-points'
@@ -128,7 +129,9 @@ describe('rehypeCollapsibleStages plugin', () => {
       heading(2, 'Stages'),
       heading(3, 'Stage 1'), p('a'),
     ]), MAPS);
-    expect(tree.children[1].tagName).toBe('details');
+    // Stage index nav is inserted, then the details follow
+    expect(tree.children[1].tagName).toBe('nav');
+    expect(tree.children[2].tagName).toBe('details');
   });
 
   it('handles Windows backslash paths', () => {
@@ -136,6 +139,55 @@ describe('rehypeCollapsibleStages plugin', () => {
       heading(2, 'Stages', { id: 'stages' }),
       heading(3, 'Stage 1'), p('a'),
     ]), 'D:\\Code\\playZE.gg\\src\\content\\docs\\maps\\ze_x.md');
-    expect(tree.children[1].tagName).toBe('details');
+    expect(tree.children[1].tagName).toBe('nav'); // stage index
+    expect(tree.children[2].tagName).toBe('details');
+  });
+});
+
+describe('stage index', () => {
+  it('inserts a nav.stage-index after the Stages h2 linking each stage by id', () => {
+    const tree = run(root([
+      heading(2, 'Stages', { id: 'stages' }),
+      heading(3, 'Stage 1', { id: 'stage-1' }), p('a'),
+      heading(3, 'Stage 2', { id: 'stage-2' }), p('b'),
+    ]), MAPS);
+
+    const nav = tree.children[1];
+    expect(nav.tagName).toBe('nav');
+    expect((nav.properties.className || []).includes('stage-index')).toBe(true);
+    const links = nav.children[0].children.map((li) => li.children[0]);
+    expect(links.map((a) => a.properties.href)).toEqual(['#stage-1', '#stage-2']);
+    expect(links.map((a) => a.children[0].value)).toEqual(['Stage 1', 'Stage 2']);
+    // the folded stages still follow the nav
+    expect(tree.children[2].tagName).toBe('details');
+  });
+
+  it('inserts no nav when the Stages section has no stage headings', () => {
+    const tree = run(root([
+      heading(2, 'Stages', { id: 'stages' }),
+      p('just a paragraph, no h3s'),
+    ]), MAPS);
+    // first child after the Stages h2 is the paragraph, not a nav
+    expect(tree.children[1].tagName).toBe('p');
+  });
+
+  it('derives ids from heading text when no id is present and inserts the nav', () => {
+    const tree = run(root([
+      heading(2, 'Stages', { id: 'stages' }),
+      heading(3, 'Stage 1 — Foo'), p('a'),
+    ]), MAPS);
+
+    // nav is inserted at children[1]
+    const nav = tree.children[1];
+    expect(nav.tagName).toBe('nav');
+    expect((nav.properties.className || []).includes('stage-index')).toBe(true);
+    // link href uses the slugified text
+    const link = nav.children[0].children[0].children[0];
+    expect(link.properties.href).toBe('#stage-1--foo');
+    // the folded h3 now carries the assigned id
+    const details = tree.children[2];
+    expect(details.tagName).toBe('details');
+    const h3 = details.children[0].children[0]; // summary > h3
+    expect(h3.properties.id).toBe('stage-1--foo');
   });
 });

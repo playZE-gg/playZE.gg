@@ -86,11 +86,34 @@ Every map guide must have a `lastTested` date and `mapVersion` in its frontmatte
 
 ## Images
 
-- Optimize images before committing (use a tool like Squoosh or ImageOptim).
-- Preferred format: ~~WebP. Fallback: PNG for screenshots, JPEG for photos.~~ **This is no longer required, as our deployment process with automatically handle image transforms to the WebP format.**
-- Keep image filenames descriptive: `ze_best_korea_stage2_hold.webp` not `screenshot.webp`.
-- Place images in `src/assets/maps/<mapname>/` for map-specific images.
-- Add `alt` text to every image.
+Images are co-located with the map guide. Each map has a folder next to its
+markdown file named after the map (e.g. `src/content/docs/maps/ze_best_korea/`)
+holding that map's screenshots. Reference them with a relative link:
+
+- ✅ `![Cave entrance where humans start](./ze_best_korea/cave-entrance.webp)`
+
+Astro only bundles images that are actually referenced, so unused files never
+ship. (This is why images live under `src/`, not `public/`, which copies
+everything verbatim.)
+
+**Step layout:** to pair an instruction with its screenshot side-by-side, write
+the instruction as a paragraph, then put the image(s) on the very next line:
+
+```markdown
+Defend the cave entrance until both house doors open.
+
+![Cave entrance](./ze_best_korea/cave-entrance.webp)
+```
+
+The site pairs them automatically at build time. Multiple images for one step go
+on consecutive lines and stack in the screenshot column. A paragraph with no
+image after it stays full-width prose.
+
+**Other rules:**
+- Keep filenames descriptive: `stage2-hold.webp`, not `screenshot.webp`.
+- Add `alt` text to every image describing what it shows. Do **not** start alt
+  text with "image of", screen readers should already announce it as an image.
+- Deployment converts screenshots to WebP automatically; no need to pre-convert.
 
 ## What not to include
 

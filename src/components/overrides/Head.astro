@@ -1,0 +1,20 @@
+---
+// Widen the content column on map-guide pages so step rows have room for
+// text + screenshot side by side. Every other page keeps the 50rem reading
+// width from brand.css. Scoped to map pages by checking the route entry id;
+// injecting in <head> (not <body>) means no layout-shift flash.
+import Default from '@astrojs/starlight/components/Head.astro';
+
+const id = Astro.locals.starlightRoute?.entry?.id ?? '';
+const isMapGuide = id.startsWith('maps/');
+
+// The override below uses `is:inline set:html` so Astro emits the literal CSS
+// (a processed <style> block would ship the template text verbatim instead of
+// evaluating it). The selector is `:root:root` on purpose: specificity 0,2,0
+// outranks brand.css's `:root` 50rem default regardless of source order — do
+// NOT "simplify" it to a single :root or the column silently stays 50rem.
+---
+<Default><slot /></Default>
+{isMapGuide && (
+  <style is:inline set:html={`:root:root { --sl-content-width: 87.5rem; }`} />
+)}

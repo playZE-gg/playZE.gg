@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-label="Placeholder 3">
+  <rect width="1920" height="1080" fill="#0f1117"/>
+  <rect x="10" y="10" width="1900" height="1060" fill="none" stroke="#ff8c42" stroke-width="4" stroke-dasharray="18 14" opacity="0.45"/>
+  <g transform="translate(860 300) scale(0.41667)">
+    <path d="m106.02 0.75h267.96c58.14 0 105.27 47.13 105.27 105.27v267.96c0 58.14-47.13 105.27-105.27 105.27h-267.96c-58.14 0-105.27-47.13-105.27-105.27v-267.96c0-58.14 47.13-105.27 105.27-105.27z" fill="#ff8c42"/>
+    <path d="m39.46 182.58v-18.16h107.9v20.79l-85.53 99.22h85.53v18.16h-111.06v-20.79l85.53-99.22zm262.13 45.27v11.05h-104.22q1.32 23.42 13.95 35.79 12.63 12.11 35.26 12.11 13.16 0 25.27-3.16 12.37-3.16 24.47-9.47v21.31q-12.1 5.27-25 7.9-12.89 2.89-26.05 2.89-33.16 0-52.37-19.47-19.22-19.21-19.22-51.85 0-33.95 18.16-53.95 18.43-20 49.48-20 27.9 0 43.95 18.16 16.32 17.89 16.32 48.69zm-103.69-6.58h81.05q-0.26-18.69-10.52-29.74-10-11.32-26.85-11.32-18.95 0-30.52 10.79-11.32 10.79-13.16 30.27zm114.48 123.16h131.32v17.64h-131.32z" fill="#0f1117"/>
+  </g>
+  <text x="960" y="700" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, 'Courier New', monospace" font-size="128" font-weight="700" fill="#ff8c42" letter-spacing="2">PLACEHOLDER 3</text>
+  <text x="960" y="788" text-anchor="middle" font-family="'JetBrains Mono', ui-monospace, 'Courier New', monospace" font-size="46" fill="#8b949e">1920 × 1080</text>
+</svg>
