@@ -113,11 +113,15 @@ image after it stays full-width prose.
 - Keep filenames descriptive: `stage2-hold.webp`, not `screenshot.webp`.
 - Add `alt` text to every image describing what it shows. Do **not** start alt
   text with "image of", screen readers should already announce it as an image.
-- Deployment converts screenshots to WebP automatically; no need to pre-convert.
+- Images should be converted to WebP's using the script at 'scripts/convert-image-to-webp.bat'
+  BEFORE committing to the repo.
+- Videos should be converted to animated WebP's using the script at 'scripts/convert-to-720p-webp.bat'
+  BEFORE committing to the repo. Ensure you name your animated WebP's ''...-Anim.webp'
+  or something similar so its easier to tell at a glance whats a video and what isnt.
 
 ## What not to include
 
 - **Personal opinions framed as fact.** "This map is bad" doesn't help a player.
 - **Server-specific drama, names of specific players, or community conflicts.**
 - **Strategies you haven't personally verified.** Mark unverified information with a `:::note` aside.
-- **Content from other guides without attribution** — CC-BY-SA requires attribution.
+- **Content from other guides without attribution**

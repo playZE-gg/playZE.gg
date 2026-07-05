@@ -15,18 +15,24 @@ While this map has some very difficult sections, when working together with a co
 
 ## Stages
 
-### Stage 1 — [Stage name / location]
+### Act 1 - The Promised Land 
 
 #### Grassy Section 
 
 Humans start in a cave and must run through a house. Simply defend the cave entrance to keep zombies inside until both sets of house doors open.
 
-![Cave entrance where humans start](./ze_best_korea/placeholder-1.svg) <br/>
-![The house humans must run through](./ze_best_korea/placeholder-2.svg)
+![Cave entrance where humans start](./ze_best_korea/act1-cave-entrance.webp) <br/>
+![The house humans must run through](./ze_best_korea/act1-house-checkpoint.webp)
 
 There is a location on the right and left side of the path back that lets humans and zombies climb on top of the cliff that lines both sides of the path. It is recommended that at least a couple people that know the route defend on top of the cliff sides, in case zombies try to flank from those routes.
 
-![The path back, and the jump-up spots on the right and left sides](./ze_best_korea/placeholder-3.svg)
+![The path back](./ze_best_korea/act1-path-back-grassy.webp)
+![The jump-up spot on the left side](./ze_best_korea/act1-left-jump-up-Anim.webp)
+![The jump-up spot on the right side](./ze_best_korea/act1-right-jump-up-Anim.webp)
+
+BEWARE!!! You will find the first occurance of the primary NPC found across all stages of this map. Kill it quickly! Otherwise it will damage and knock-back your team.
+
+![Image of the NPC](./ze_best_korea/act1-npc-grassy.webp)
 
 Humans can get all the way back to the wall at the end of the path. It will open, revealing a jump up to continue forward.
 
@@ -77,7 +83,7 @@ Ideally humans continue defending until the next door is fully open and then the
 
 ![The single door to the rest of the ship](./ze_best_korea/placeholder-1.svg)
 
-#### Final section
+#### Water/Puzzle section (Final)
 
 Once the door opens, knife-out and run back. You will drop out of the ship into a large body of water. If you are looking in the same direction that you were just running after falling out of the ship, simply continue swimming forward and climb onto the platform in the water. Only one person needs to trigger the final door, Everyone else needs to defend zombies trying to climb out of the water. This is especially important because, if you do not keep them in the water, they can climb onto an elevator that leads directly to the top of the ramps behind you, from the perspective of humans defending the zombies.
 
@@ -103,7 +109,7 @@ One specific call out I will make on this is that the `Walla` Button needs to be
 
 #### <span class="rainbow"> **STAGE COMPLETE** </span>
 
-### Stage 2 — [Stage name / location]
+### Act 2 - Hail Great Leader!
 
 
 ### Stage 2 — [Stage name / location]

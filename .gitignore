@@ -22,3 +22,14 @@ Thumbs.db
 
 # Playwright
 .playwright-mcp/
+
+# Raw screen recordings — kept beside content as the editable source for
+# generated .webp clips (see scripts/convert-video-to-webp.bat), never tracked.
+/src/**/*.mp4
+
+# Raw screenshots — kept beside content as editable sources; the committed asset
+# is the downscaled .webp (see scripts/convert-image-to-webp.bat). Scoped to
+# content so tracked images elsewhere (public/og.png, logos) are unaffected.
+src/content/**/*.png
+src/content/**/*.jpg
+src/content/**/*.jpeg
