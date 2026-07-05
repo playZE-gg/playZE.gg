@@ -32,7 +32,7 @@ There is a location on the right and left side of the path back that lets humans
 
 BEWARE!!! You will find the first occurance of the primary NPC found across all stages of this map. Kill it quickly! Otherwise it will damage and knock-back your team.
 
-![Image of the NPC](./ze_best_korea/act1-npc-grassy.webp)
+![The NPC you must kill](./ze_best_korea/act1-npc-grassy.webp)
 
 Humans can get all the way back to the wall at the end of the path. It will open, revealing a jump up to continue forward.
 
