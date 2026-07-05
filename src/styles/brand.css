@@ -516,3 +516,76 @@ starlight-toc a:hover {
     }
   }
 }
+
+/* ─── Image lightbox ─────────────────────────────────────────── */
+/* Article images become clickable to open full-screen. The overlay element is
+   created once by the head script and reused. */
+.sl-markdown-content img[data-zoomable] {
+  cursor: zoom-in;
+}
+
+.img-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.85);
+}
+.img-lightbox[hidden] {
+  display: none;
+}
+.img-lightbox figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+.img-lightbox img {
+  max-width: 92vw;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  cursor: zoom-out;
+}
+.img-lightbox figcaption {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 60ch;
+}
+.img-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.75rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.img-lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .img-lightbox:not([hidden]) {
+    animation: img-lightbox-in 150ms ease both;
+  }
+  @keyframes img-lightbox-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}

@@ -36,13 +36,13 @@ BEWARE!!! You will find the first occurance of the primary NPC found across all 
 
 Humans can get all the way back to the wall at the end of the path. It will open, revealing a jump up to continue forward.
 
-![The wall before and after opening](./ze_best_korea/placeholder-4.svg)
+![The wall humans must trigger to open](./ze_best_korea/act1-wall1-grassy.webp)
 
-When continuing forward, watch where you're walking! There are landmines on the ground lining the path that will one-shot you, and deal damage to nearby teammates. Hug the right wall and you will dodge most of them. Make sure you get back quickly to the ramp and defend at the top. The wall behind the ramp will open to reveal the rest of the grassy section.
+When continuing forward, watch where you're walking! There are landmines on the ground lining the path that will one-shot you, and deal damage to nearby teammates. Hug the right wall and you will dodge most of them. Make sure you get back quickly to the ramp and defend at the top. There will be another NPC you must kill. The wall behind the ramp will open to reveal the rest of the grassy section.
 
-![Landmines lining the path](./ze_best_korea/placeholder-5.svg) <br/>
-![The ramp to defend at the top of](./ze_best_korea/placeholder-1.svg) <br/>
-![The wall behind the ramp](./ze_best_korea/placeholder-2.svg)
+![Landmines lining the path](./ze_best_korea/act1-mines1-grassy.webp) <br/>
+![The ramp to defend at the top of with NPC next to it](./ze_best_korea/act1-mines2-grassy.webp) <br/>
+![The wall behind the ramp](./ze_best_korea/act1-wall2-grassy.webp)
 
 When the wall opens there will be more landmines. Continue hugging the right side to dodge most of them. If you continue running, You will encounter a Cliff jumped down and to the right to continue following the path. Defenders should jump down and back up enough so that zombies do not land on top of them from the Cliff above Have at least five people run back to trigger because there will be an NPC they need to kill. 
 
