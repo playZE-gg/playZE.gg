@@ -44,44 +44,50 @@ When continuing forward, watch where you're walking! There are landmines on the 
 ![The ramp to defend at the top of with NPC next to it](./ze_best_korea/act1-mines2-grassy.webp) <br/>
 ![The wall behind the ramp](./ze_best_korea/act1-wall2-grassy.webp)
 
-When the wall opens there will be more landmines. Continue hugging the right side to dodge most of them. If you continue running, You will encounter a Cliff jumped down and to the right to continue following the path. Defenders should jump down and back up enough so that zombies do not land on top of them from the Cliff above Have at least five people run back to trigger because there will be an NPC they need to kill. 
+When the wall opens there will be more landmines. Continue hugging the right side to dodge most of them. If you continue running, You will encounter a Cliff jumped down and to the right to continue following the path. Defenders should jump down and back up enough so that zombies do not land on top of them from the cliff above. Have a handful of people run back to trigger because there will be an new NPC they need to kill.
 
-![More landmines past the wall](./ze_best_korea/placeholder-3.svg) <br/>
-![The cliff to jump down and to the right](./ze_best_korea/placeholder-4.svg) <br/>
-![The section to defend](./ze_best_korea/placeholder-5.svg) <br/>
-![The door to trigger](./ze_best_korea/placeholder-1.svg)
+![More landmines past the wall and the cliff to jump down and to the right](./ze_best_korea/act1-cliff1-grassy.webp) <br/>
+![The section to defend](./ze_best_korea/act1-cliff2-grassy.webp) <br/>
 
-Once there is about 15 seconds left to the door opening defenders should run back so that they do not get caught in a zombie teleport. Make sure to not door hug because an NPC will run out of the door and knock you off of the cliff. Kill this NPC quickly so that you can safely complete the next section.
+The new NPC takes the form of a baby, which will track the nearest player and attach to them, at which point a count down will start. If it isn't killed in time, the baby explodes, killing the player it is attached to. Humans must shoot the baby on the attached player to kill it.
 
-![The NPC that runs out of the door](./ze_best_korea/placeholder-2.svg)
+![The door to trigger with the new NPC](./ze_best_korea/act1-baby-and-door-grassy.webp)
+![The NPC attached to a player from players perspective](./ze_best_korea/act1-baby-grassy.webp) <br/>
+
+Once there is about 15 seconds left to the door opening defenders should run back so that they do not get caught in a zombie teleport. Make sure to not door hug because an NPC will run out of the door and knock you off of the cliff. Kill this NPC quickly so that you can safely enter the next section.
+
+![The NPC that runs out of the door](./ze_best_korea/act1-door-to-indoors-npc.webp)
 
 #### Concrete/Indoor section
 
 Fall back all the way to the next defense by hugging the right, walking up the ramp, Turn left and then surf to the end. If you are comfortable doing so you may instead hug the left side through the door and complete the jumps to get to the end as well. <br/> <br/>
-Zombies will be taking both sections. Be aware that there is a Platform in the middle of the Two paths That humans will need to use after defending. Usually zombies will not make it to the platform fast enough to make use of it, but ensure that zombies are shot off if any make it on.
+Zombies will be taking both sections. Be aware that there is a Platform in the middle of the two paths that humans will need to use after defending. Usually zombies will not make it to the platform fast enough to make use of it, but ensure that zombies are shot off if any make it on.
 
-![The right path and surf ramp](./ze_best_korea/placeholder-3.svg) <br/>
-![The left path with jumps](./ze_best_korea/placeholder-4.svg) <br/>
-![The moving platform](./ze_best_korea/placeholder-5.svg)
+![The left path and jumps](./ze_best_korea/act1-jumps-concrete.webp) <br/>
+![The middle path with the tram moving](./ze_best_korea/act1-tram1-concrete.webp) <br/>
+![The right path with the ramp](./ze_best_korea/act1-ramp1-concrete.webp)
 
 Defend at the end of the surf until the platform makes it all the way to bridge the gap between the surf Path and the jumps path. At this point humans must jump onto the platform and ride it to the next part. 
 
-![The platform bridging the two paths](./ze_best_korea/placeholder-1.svg)
+![The platform bridging the two paths](./ze_best_korea/act1-ramp-defend-concrete.webp)
 
-At this point zombies are likely close, So proper defense on the platform is important. While the humans are riding the platform And shooting zombies, be sure to pre-fire the left path that zombies can take because they can use the cover to get close enough to jump on.
+By now zombies are likely close, so proper defense on the platform is important. While the humans are riding the platform And shooting zombies, be sure to pre-fire the left and right paths that zombies can take because they can use the cover to get close enough to jump on.
 
-![The paths from the perspective of humans defending](./ze_best_korea/placeholder-2.svg)
+![The paths from the perspective of humans defending](./ze_best_korea/act1-tram-defend-concrete.webp)
 
-After a long defense the platform would be close enough to two ramps so that humans can jump on to them. Quickly jump on to one of the two ramps and door hug. Both of the doors in front of you Will open simultaneously into a ship, allowing humans inside of an airlock with a second set of doors. <br/> <br/>
-Continue defending if any zombies made it behind you, Until the second set of doors open quickly exit the second set of doors But do not run back. Zombies will teleport inside of the airlock and you must defend until the next door opens Only one person needs to go back to trigger.
+After a long defense the platform should be close enough to two ramps so that humans can jump on to them. Quickly jump on to one of the two ramps and door hug. Both of the doors in front of you Will open simultaneously into a ship, allowing humans inside of an airlock with a second set of doors.
 
-![The bridges to the two ramps](./ze_best_korea/placeholder-3.svg) <br/>
-![The first doors and airlock](./ze_best_korea/placeholder-4.svg) <br/>
-![The human defense position, showing where zombies teleport in the airlock](./ze_best_korea/placeholder-5.svg)
+![The bridges to the two ramps and the airlock doors](./ze_best_korea/act1-airlock-outside-concrete.webp)
+
+Continue defending if any zombies made it behind you, Until the second set of doors open quickly exit the second set of doors But do not run back. Zombies will teleport inside of the airlock and you must defend until the next door opens Only one person needs to go back to trigger. <br/> <br/>
+There is also an NPC inside the second set of airlock doors to the right you must kill.
+
+![The human defense position, showing where zombies teleport in the airlock](./ze_best_korea/act1-airlock-inside-ship.webp)
+![The NPC inside the ship](./ze_best_korea/act1-npc-ship.webp)
 
 Ideally humans continue defending until the next door is fully open and then they can back up. However, it's also possible to defend past the split section where the airlocks are and instead defend in the glass section of the ship you are in, in the case that zombies have broken out Of one of the airlocks. 
 
-![The single door to the rest of the ship](./ze_best_korea/placeholder-1.svg)
+![The single door to the rest of the ship](./ze_best_korea/act1-ship-interior.webp)
 
 #### Water/Puzzle section (Final)
 
